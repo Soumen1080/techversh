@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #0F0F0F; /* true-black */
+    --color-foreground: #FFFFFF; /* white */
+    --color-border: rgba(255, 255, 255, 0.1); /* white-10 */
+    --color-input: #2A2A2A; /* gray-800 */
+    --color-ring: #0066FF; /* blue-600 */
+    
+    /* Card Colors */
+    --color-card: #2A2A2A; /* gray-800 */
+    --color-card-foreground: #FFFFFF; /* white */
+    --color-popover: #2A2A2A; /* gray-800 */
+    --color-popover-foreground: #FFFFFF; /* white */
+    
+    /* Muted Colors */
+    --color-muted: #1A1A1A; /* gray-900 */
+    --color-muted-foreground: #B3B3B3; /* gray-400 */
+    
+    /* Primary Colors */
+    --color-primary: #0066FF; /* blue-600 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    
+    /* Secondary Colors */
+    --color-secondary: #1A1A1A; /* gray-900 */
+    --color-secondary-foreground: #FFFFFF; /* white */
+    
+    /* Accent Colors */
+    --color-accent: #00FF88; /* green-400 */
+    --color-accent-foreground: #0F0F0F; /* black */
+    
+    /* State Colors */
+    --color-success: #00FF88; /* green-400 */
+    --color-success-foreground: #0F0F0F; /* black */
+    
+    --color-warning: #FFB800; /* amber-500 */
+    --color-warning-foreground: #0F0F0F; /* black */
+    
+    --color-error: #FF4444; /* red-500 */
+    --color-error-foreground: #FFFFFF; /* white */
+    
+    --color-destructive: #FF4444; /* red-500 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Surface Colors */
+    --color-surface: #2A2A2A; /* gray-800 */
+    --color-text-primary: #FFFFFF; /* white */
+    --color-text-secondary: #B3B3B3; /* gray-400 */
+  }
+
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .glass-morphism {
+    @apply backdrop-blur-sm bg-white/5 border border-white/10;
+  }
+  
+  .gradient-overlay {
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.1) 0%, rgba(0, 255, 136, 0.1) 100%);
+  }
+  
+  .shadow-elevation {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .shadow-elevation-hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+  
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}

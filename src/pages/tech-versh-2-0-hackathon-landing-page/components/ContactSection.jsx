@@ -173,7 +173,7 @@ const ContactSection = () => {
             Stay Updated
           </h3>
           <p className="text-lg text-text-secondary max-w-2xl mx-auto mb-8">
-            Get the latest updates about TechVersh-2.0, including registration deadlines, 
+            Get the latest updates about TechVerse-2.0, including registration deadlines, 
             workshop announcements, and exclusive content.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 max-w-md mx-auto">
@@ -238,11 +238,11 @@ const ContactSection = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Icon name="Users" size={16} color="var(--color-accent)" />
-                <span>2000+ Participants</span>
+                <span>1000+ applicants</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Icon name="Trophy" size={16} color="var(--color-accent)" />
-                <span>₹12L+ Prizes</span>
+                <span>Very prestigious counselors</span>
               </li>
             </ul>
           </div>
@@ -253,7 +253,7 @@ const ContactSection = () => {
             <ul className="space-y-3 text-text-secondary">
               <li>
                 <a href="mailto:contact@techversh.com" className="hover:text-foreground transition-colors duration-200">
-                  contact@techversh.com
+                  contact@techverse.com
                 </a>
               </li>
               <li>
@@ -262,7 +262,7 @@ const ContactSection = () => {
                 </a>
               </li>
               <li>Virtual &amp; On-Ground</li>
-              <li>India-wide Event</li>
+              <li>India-wide Counseling</li>
             </ul>
           </div>
         </div>
@@ -276,9 +276,9 @@ const ContactSection = () => {
                 <Icon name="Zap" size={24} color="white" />
               </div>
               <div>
-                <p className="text-foreground font-semibold">TechVersh-2.0</p>
+                <p className="text-foreground font-semibold">TechVerse-2.0</p>
                 <p className="text-sm text-text-secondary">
-                  © {new Date().getFullYear()} TechVersh. All rights reserved.
+                  © {new Date().getFullYear()} TechVerse. All rights reserved.
                 </p>
               </div>
             </div>

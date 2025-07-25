@@ -5,32 +5,29 @@ import SectionAnchor from '../../../components/ui/SectionAnchor';
 const FAQSection = () => {
   const [openFAQ, setOpenFAQ] = useState(0);
 
-  const faqs = [
+  const newLocal = [
     {
-      question: "Who can participate in TechVersh-2.0 Hackathon?",
-      answer: `The hackathon is open to all undergraduate engineering students from Indian universities, software developers with 0-3 years of experience, UI/UX designers, and technology enthusiasts aged 18-24.\n\nParticipants can form teams of 2-4 members or join as individuals and be matched with other participants. We welcome students from all technical backgrounds including Computer Science, IT, Electronics, Mechanical, and other engineering disciplines.`
+      question: "Can I get tech career counseling online?",
+      answer: `Yes! Our web app is designed to provide online counseling for your tech journey.\n\nYou can connect with experienced mentors, schedule virtual sessions, and get personalized advice from anywhere.`
     },
     {
-      question: "What are the registration requirements and deadlines?",
-      answer: `Registration is completely free and open until September 10, 2025, or until we reach our capacity of 2000+ participants.\n\nTo register, you'll need:\n• Valid student ID or proof of enrollment\n• Team details (if participating as a team)\n• Brief description of your technical background\n• Contact information for all team members\n\nEarly registration is recommended as spots are limited for the on-ground event (300 participants).`
+      question: "How do I interact with counselors on this platform?",
+      answer: `You can chat with counselors directly through our web app, book video calls, or join group discussions.\n\nAll communication is secure and tailored to your needs, ensuring you get the support you require.`
     },
     {
-      question: "What should I bring to the hackathon?",
-      answer: `For the 36-hour hackathon, please bring:\n\n• Your laptop/computer with necessary software installed\n• Chargers and power banks\n• Any hardware components you plan to use\n• Valid ID proof and student identification\n• Comfortable clothes for the overnight stay\n• Personal toiletries and medications\n\nWe'll provide meals, snacks, Wi-Fi, workspace, and basic stationery. Sleeping arrangements and refreshments will be available throughout the event.`
+      question: "What topics can I discuss during counseling?",
+      answer: `You can discuss a wide range of topics including career guidance, skill development, interview preparation, resume building, and choosing the right tech path.\n\nOur counselors are equipped to help you at every stage of your tech journey.`
     },
     {
-      question: "How does the judging process work?",
-      answer: `Projects will be evaluated by a panel of industry experts, faculty members, and sponsor representatives based on:\n\n• Innovation and Creativity (30%)\n• Technical Implementation (25%)\n• Social Impact and Relevance (20%)\n• Presentation and Demo (15%)\n• Business Viability (10%)\n\nJudging happens in multiple rounds: initial screening, semi-finals, and final presentations. Winners will be announced at the closing ceremony on September 13, 2025.`
+      question: "Are counseling sessions confidential?",
+      answer: `Absolutely! All sessions are private and confidential.\n\nYour information and conversations are protected, and only accessible to you and your assigned counselor.`
     },
     {
-      question: "Are there any restrictions on technology or programming languages?",
-      answer: `No restrictions! You're free to use any programming languages, frameworks, tools, or technologies you're comfortable with.\n\nPopular choices include:\n• Web: React, Angular, Vue.js, Node.js, Python Django/Flask\n• Mobile: React Native, Flutter, Swift, Kotlin\n• AI/ML: Python, TensorFlow, PyTorch, scikit-learn\n• Blockchain: Solidity, Web3.js, Ethereum\n• IoT: Arduino, Raspberry Pi, sensors\n\nOpen source libraries and APIs are encouraged. However, pre-built solutions or existing projects are not allowed.`
-    },
-    {
-      question: "What support and resources will be available during the event?",
-      answer: `We provide comprehensive support throughout the 36 hours:\n\n• 24/7 technical mentors from industry and academia\n• Workshops on trending technologies\n• API access and credits from sponsor companies\n• High-speed internet and power backup\n• Dedicated help desk for technical issues\n• Medical assistance and security\n• Regular meals, snacks, and beverages\n• Networking sessions with industry professionals\n\nMentors will be available for one-on-one guidance, code reviews, and strategic advice to help you build the best possible solution.`
+      question: "Is there a fee for using this counseling web app?",
+      answer: `We offer both free and paid counseling options.\n\nYou can access basic resources at no cost, and opt for premium sessions with expert counselors for a fee. Details are available on our pricing page.`
     }
   ];
+  const faqs = newLocal;
 
   const toggleFAQ = (index) => {
     setOpenFAQ(openFAQ === index ? -1 : index);
@@ -53,7 +50,7 @@ const FAQSection = () => {
           
           <p className="text-lg text-text-secondary max-w-2xl mx-auto leading-relaxed">
             Got questions? We've got answers! Find everything you need to know about 
-            participating in TechVersh-2.0 Hackathon.
+            participating in TechVerse-2.0.
           </p>
         </div>
 
@@ -128,7 +125,7 @@ const FAQSection = () => {
             </button>
 
             <button 
-              onClick={() => window.open('https://discord.gg/techversh', '_blank')}
+              onClick={() => window.open('https://discord.gg/techverse', '_blank')}
               className="flex flex-col items-center p-4 rounded-xl hover:bg-white/10 transition-colors duration-200 group"
             >
               <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center mb-3 group-hover:bg-accent/30 transition-colors duration-200">

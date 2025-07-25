@@ -1,0 +1,9 @@
+# Query: tech-versh-2-0-landing-page
+# ContextLines: 1
+
+1 result - 1 file
+
+techversh_hackathon\src\Routes.jsx:
+  16          <Route path="/" element={<TechVersh20HackathonLandingPage />} />
+  17:         <Route path="/tech-versh-2-0-landing-page" element={<TechVersh20HackathonLandingPage />} />
+  18          <Route path="*" element={<NotFound />} />

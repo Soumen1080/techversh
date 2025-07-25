@@ -7,12 +7,12 @@ const PrizesSection = () => {
     {
       position: "1st",
       title: "Winner",
-      amount: "₹75,000",
+      amount: "Gemini peo",
       icon: "Trophy",
       color: "from-yellow-500/20 to-amber-500/20",
       borderColor: "border-yellow-500/50",
       iconColor: "var(--color-warning)",
-      benefits: ["Cash Prize", "Mentorship Program", "Internship Opportunities", "Certificate"]
+      benefits: [ "Mentorship Program", "Internship Opportunities","Counsilling "]
     },
     {
       position: "2nd",

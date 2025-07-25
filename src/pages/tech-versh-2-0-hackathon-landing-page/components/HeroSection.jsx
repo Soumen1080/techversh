@@ -29,8 +29,8 @@ const HeroSection = () => {
 
         {/* Main Heading */}
         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight">
-          <span className="block text-gradient mb-2">TechVersh</span>
-          <span className="block text-foreground text-3xl sm:text-4xl lg:text-5xl font-semibold">2.0 Hackathon</span>
+          <span className="block text-gradient mb-2">TechVerse</span>
+          <span className="block text-foreground text-3xl sm:text-4xl lg:text-5xl font-semibold">Welcome !</span>
         </h1>
 
         {/* Tagline */}
@@ -43,23 +43,24 @@ const HeroSection = () => {
 
         {/* Description */}
         <p className="text-base sm:text-lg text-text-secondary max-w-3xl mx-auto mb-12 leading-relaxed">
-          Join India's premier student hackathon where brilliant minds collaborate to build revolutionary solutions. 
-          Experience 36 hours of intense coding, mentorship from industry experts, and compete for exciting prizes.
+          Chart your course in tech. Get expert guidance and a personalized roadmap to success.
+          Don't just code, build a career. Unlock your potential with one-on-one tech mentorship.
+          Your tech career, accelerated. Connect with industry experts and land the job you deserve.
         </p>
 
         {/* Location & Stats */}
         <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 mb-12">
           <div className="flex items-center space-x-2 text-text-secondary">
             <Icon name="MapPin" size={20} color="var(--color-accent)" />
-            <span className="font-medium">Virtual & On-Ground Event</span>
+            <span className="font-medium">Virtual But Right Guidance !</span>
           </div>
           <div className="flex items-center space-x-2 text-text-secondary">
             <Icon name="Users" size={20} color="var(--color-accent)" />
-            <span className="font-medium">2000+ Expected Participants</span>
+            <span className="font-medium">1000+ students already enrolled</span>
           </div>
           <div className="flex items-center space-x-2 text-text-secondary">
             <Icon name="Trophy" size={20} color="var(--color-accent)" />
-            <span className="font-medium">₹2 Lakhs Prize Pool</span>
+            <span className="font-medium">very experienced mentors</span>
           </div>
         </div>
 
@@ -90,7 +91,7 @@ const HeroSection = () => {
 
         {/* Countdown Timer Placeholder */}
         <div className="mt-16 p-6 glass-morphism rounded-2xl border border-white/10 max-w-md mx-auto">
-          <p className="text-sm text-text-secondary mb-3 font-medium">Event Starts In</p>
+          <p className="text-sm text-text-secondary mb-3 font-medium">Limited Time Offer valid</p>
           <div className="grid grid-cols-4 gap-4 text-center">
             <div>
               <div className="text-2xl font-bold text-primary">245</div>

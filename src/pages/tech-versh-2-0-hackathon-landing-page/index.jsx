@@ -9,7 +9,7 @@ import TeamSection from './components/TeamSection';
 import FAQSection from './components/FAQSection';
 import ContactSection from './components/ContactSection';
 
-const TechVershLandingPage = () => {
+const TechVerseLandingPage = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
@@ -45,4 +45,4 @@ const TechVershLandingPage = () => {
   );
 };
 
-export default TechVershLandingPage;
+export default TechVerseLandingPage;
